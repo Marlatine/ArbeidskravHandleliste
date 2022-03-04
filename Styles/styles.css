@@ -1,0 +1,136 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-image: url(/Images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Lobster", cursive;
+  color: white;
+  letter-spacing: 1px;
+}
+
+/* The main container */
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Styling for all headers */
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-family: "Cinzel Decorative", cursive;
+  font-size: 20px;
+  letter-spacing: 0px;
+}
+
+/* Styling for all images */
+
+img {
+  width: 150px;
+  padding-top: 20px;
+}
+
+/* Styling for all cards */
+
+.card-container-1,
+.card-container-2,
+.card-container-3 {
+  position: relative;
+  width: 450px;
+  height: 700px;
+  background-color: #080808ee;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+#already-have-input,
+#almost-empty-input {
+  width: 95%;
+  padding: 5px;
+}
+
+#need-input,
+#price-input {
+  padding: 5px;
+}
+
+#price-input {
+  width: 60px;
+}
+
+/* Styling of the buttons */
+
+#add-btn {
+  background-color: #253e1f;
+  width: 101%;
+  margin-top: 15px;
+  padding: 5px;
+  border: none;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  color: white;
+  font-weight: bold;
+}
+
+#add-btn:hover {
+  box-shadow: 0 0 10px 0 #feb254 inset, 0 0 20px 5px #feb254;
+  background-color: #feb254;
+  color: #000000;
+  cursor: pointer;
+}
+
+/* Styling of the delete button */
+
+#delete-btn {
+  float: right;
+  background-color: red;
+  border-radius: 50%;
+  border: none;
+  width: 38px;
+  height: 38px;
+  display: block;
+}
+
+.fa-trash {
+  color: white;
+}
+
+#delete-btn:hover {
+  box-shadow: 0 0 10px 0 red inset, 0 0 20px 8px red;
+  cursor: pointer;
+}
+
+/* Styling of the lists */
+
+ol {
+  height: 390px;
+  width: 85%;
+  overflow: auto;
+}
+
+li {
+  padding: 20px;
+  border-bottom: 1px solid #feb254;
+  font-size: 20px;
+}
+
+/* Styling of the text for total price on card 3 */
+
+h3 {
+  padding: 5px;
+  border-bottom: 1px solid #feb254;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./index.js" defer></script>
+    <link href="./Styles/styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap"
+      rel="stylesheet"
+    />
+    <title>Handleliste</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card-container-1">
+        <img
+          src="./Images/paprika.png"
+          alt="One red pepper, one yellow pepper and one green pepper"
+        />
+
+        <h1>Dette har du fra før</h1>
+
+        <div class="input-button-container">
+          <input
+            type="text"
+            id="already-have-input"
+            placeholder="Skriv her..."
+          />
+          <button id="add-btn" onclick="addWhatYouHave()">Legg til</button>
+        </div>
+
+        <ol id="what-you-have-list"></ol>
+      </div>
+
+      <div class="card-container-2">
+        <img
+          src="./Images/paprika.png"
+          alt="One red pepper, one yellow pepper and one green pepper"
+        />
+
+        <h1>Begynner å gå tom for</h1>
+
+        <div class="input-button-container">
+          <input
+            type="text"
+            id="almost-empty-input"
+            placeholder="Skriv her..."
+          />
+          <button id="add-btn" onclick="addAlmostEmpty()">Legg til</button>
+        </div>
+
+        <ol id="almost-empty-list"></ol>
+      </div>
+
+      <div class="card-container-3">
+        <img
+          src="./Images/paprika.png"
+          alt="One red pepper, one yellow pepper and one green pepper"
+        />
+
+        <h1>Dette må du kjøpe mer av</h1>
+
+        <div class="input-button-container">
+          <input type="text" id="need-input" placeholder="Skriv her..." />
+          <input type="text" id="price-input" placeholder="Skriv pris" />
+          <div class="button-container">
+            <button id="add-btn" onclick="addWhatYouNeed()">Legg til</button>
+          </div>
+        </div>
+
+        <ol id="must-have-list"></ol>
+
+        <h3 id="total-price">Total pris på varer:</h3>
+      </div>
+    </div>
+  </body>
+</html>

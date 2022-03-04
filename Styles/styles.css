@@ -30,14 +30,14 @@ h1 {
   display: flex;
   justify-content: center;
   font-family: "Cinzel Decorative", cursive;
-  font-size: 20px;
+  font-size: 22px;
   letter-spacing: 0px;
 }
 
-/* Styling for all images */
+/* Styling for all images on cards */
 
 img {
-  width: 150px;
+  width: 160px;
   padding-top: 20px;
 }
 
@@ -125,7 +125,7 @@ ol {
 li {
   padding: 20px;
   border-bottom: 1px solid #feb254;
-  font-size: 20px;
+  font-size: 22px;
   letter-spacing: 2px;
 }
 
